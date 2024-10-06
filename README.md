@@ -13,7 +13,19 @@ The project used to test the shopping functionality was an ecommerce project fou
 
 Python version: `3.12.2`
 
-It is best practice to setup a virtual environment to work with Python projects, check how to [make a virtual environment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+It is best practice to setup a virtual environment to work with Python projects, for more information on how to [make a virtual environment](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/).
+
+## Virtual Environment quick guide
+
+1. `python -m venv venv`
+For Windows:
+2. `venv\Scripts\activate`
+For MacOS/Linux
+2. `soruce venv/bin.activate`
+3. `pip install -r requirements.txt`
+
+To deactivate the virtual environment:
+4. `deactivate`
 
 Run the following command to install the needed dependencies:
 ```bash
