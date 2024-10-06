@@ -17,21 +17,17 @@ It is best practice to setup a virtual environment to work with Python projects,
 
 ## Virtual Environment quick guide
 
-1. `python -m venv venv`
+1. `python -m venv venv`\
 For Windows:
-2. `venv\Scripts\activate`
+2. `venv\Scripts\activate`\
 For MacOS/Linux
-2. `soruce venv/bin.activate`
-3. `pip install -r requirements.txt`
-
+2. `source venv/bin.activate`\
+**Install dependencies**
+3. `pip install -r requirements.txt`\
 To deactivate the virtual environment:
 4. `deactivate`
 
-Run the following command to install the needed dependencies:
-```bash
-pip install -r requirements.txt
-```
-
+# Running the project
 After installing the dependencies, run the following command to test:
 
 ```bash
