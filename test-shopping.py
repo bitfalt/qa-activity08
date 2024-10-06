@@ -149,7 +149,11 @@ class TestShopping(unittest.TestCase):
         self.assertIn("Nike revolution 5", product_element.text, "El producto no se ha añadido al carrito.")
         self.checkout()
         
-    
+    def test_add_product_by_name_to_cart_no_exist(self):
+        """Prueba de añadir un producto al carrito usando la búsqueda por nombre"""
+        self.navigate_to_shop()
+        self.filter_products_by_name("Teni")
+  
     def test_add_multiple_products_by_name_to_cart(self):
         """Prueba de añadir múltiples productos al carrito usando la búsqueda por nombre"""
         self.navigate_to_shop()
