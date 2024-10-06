@@ -78,7 +78,12 @@ class TestShopping(unittest.TestCase):
         add_button.click()
 
     def navigate_to_cart(self):
-        cart_xpath = "/html/body/div/div/div[2]/div[3]/div[2]/a"
+        confirmation_xpath = "/html/body/div/div/div[4]/div/div/div/div/div"
+        # Wait until confirmation appears
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, confirmation_xpath))
+        )
+        cart_xpath = "/html/body/div/div/div[4]/div/div/div/div/div/a[1]"
         self.driver.find_element(By.XPATH, cart_xpath).click()
         cart_url = "https://demo.evershop.io/cart"
         WebDriverWait(self.driver, 10).until(EC.url_contains(cart_url))
